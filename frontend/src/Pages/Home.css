@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../assets/default_bg.jpg'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .weather-app {
+    backdrop-filter: blur(10px);
+    background: rgba(230, 229, 229, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 98%;
+    max-width: 800px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .title {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    color: black;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border:solid rgb(199, 198, 198) 0.2px;
+    outline: none;
+    
+  }
+  
+  .search-button {
+    background: #6a92bb;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .weather-card {
+    background: rgba(216, 207, 207, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .city-name {
+    font-size: 18px;
+  }
+  
+  .temperature {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .weather-icon {
+    width: 80px;
+    margin: 10px auto;
+  }
+  
+  .weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    color: white;
+  }
+  
+  .detail-title {
+    font-weight: bold;
+  }
+  
+  .forecast-container {
+    margin-top: 20px;
+  }
+  
+  .forecast-title {
+    color: white;
+  }
+  
+  .forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
+  
+  .forecast-card {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .forecast-icon {
+    width: 40px;
+  }
+  

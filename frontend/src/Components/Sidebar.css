@@ -1,0 +1,91 @@
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Hidden by default */
+    width: 280px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(233, 233, 233, 0.2);
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 200;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Slide in */
+  }
+  
+  .close-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    color: white;
+  }
+  
+  .sidebar-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .city-item {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+    color: rgb(254, 254, 254);
+  }
+  
+  .city-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Overlay to close sidebar */
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 150;
+  }
+  
+  .sidebar-overlay.show {
+    display: block;
+  }
+ 
+
+  .delete-btn{
+    padding: 2px;
+
+    
+    cursor: pointer;
+    }
+
+  .item{
+    padding-right: 10px;
+  }
